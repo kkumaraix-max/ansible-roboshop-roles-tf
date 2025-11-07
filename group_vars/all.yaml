@@ -1,0 +1,9 @@
+MONGODB_HOST: mongodb-{{ env }}.daws86s.fun # mongodb-dev.daws86s.fun
+REDIS_HOST: redis-{{ env }}.daws86s.fun
+CATALOGUE_HOST: catalogue-{{ env }}.daws86s.fun
+CART_HOST: cart-{{ env }}.daws86s.fun
+USER_HOST: user-{{ env }}.daws86s.fun
+RABBITMQ_HOST: rabbitmq-{{ env }}.daws86s.fun
+MYSQL_HOST: mysql-{{ env }}.daws86s.fun
+SHIPPING_HOST: shipping-{{ env }}.daws86s.fun
+PAYMENT_HOST: payment-{{ env }}.daws86s.fun

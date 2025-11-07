@@ -1,0 +1,33 @@
+- name: create roboshop system user
+  ansible.builtin.user:
+    name: roboshop
+    comment: RoboShop System user
+    system: true
+    shell: /sbin/nologin
+    home: /app
+# Safe to remove directory, because 2nd time if we run it will download freshly. no error if does not exist
+- name: remove app directory
+  ansible.builtin.file:
+    path: /app
+    state: absent
+
+- name: create app directory
+  ansible.builtin.file:
+    state: directory
+    path: /app
+
+- name: Delete {{ component }} file
+  ansible.builtin.file:
+    path: /tmp/{{ component }}.zip
+    state: absent
+
+- name: download {{ component }} application
+  ansible.builtin.get_url:
+    url: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip
+    dest: /tmp/{{ component }}.zip
+
+- name: extract {{ component }} application
+  ansible.builtin.unarchive:
+    src: /tmp/{{ component }}.zip
+    dest: /app
+    remote_src: yes
