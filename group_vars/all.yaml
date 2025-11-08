@@ -1,9 +1,9 @@
-MONGODB_HOST: mongodb-{{ env }}.daws86s.fun # mongodb-dev.daws86s.fun
-REDIS_HOST: redis-{{ env }}.daws86s.fun
-CATALOGUE_HOST: catalogue-{{ env }}.daws86s.fun
-CART_HOST: cart-{{ env }}.daws86s.fun
-USER_HOST: user-{{ env }}.daws86s.fun
-RABBITMQ_HOST: rabbitmq-{{ env }}.daws86s.fun
-MYSQL_HOST: mysql-{{ env }}.daws86s.fun
-SHIPPING_HOST: shipping-{{ env }}.daws86s.fun
-PAYMENT_HOST: payment-{{ env }}.daws86s.fun
+MONGODB_HOST: mongodb-{{ env }}.anilkathoju.space # mongodb-dev.anilkathoju.space
+REDIS_HOST: redis-{{ env }}.anilkathoju.space
+CATALOGUE_HOST: catalogue-{{ env }}.anilkathoju.space
+CART_HOST: cart-{{ env }}.anilkathoju.space
+USER_HOST: user-{{ env }}.anilkathoju.space
+RABBITMQ_HOST: rabbitmq-{{ env }}.anilkathoju.space
+MYSQL_HOST: mysql-{{ env }}.anilkathoju.space
+SHIPPING_HOST: shipping-{{ env }}.anilkathoju.space
+PAYMENT_HOST: payment-{{ env }}.anilkathoju.space
