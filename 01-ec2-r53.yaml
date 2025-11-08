@@ -5,7 +5,7 @@
     ami_id: ami-09c813fb71547fc4f
     sg_id: sg-07c8acf3fa6b923fa # replace with your SG ID
     zone_id: "Z0948150OFPSYTNVYZOY" # replace with your ID
-    domain_name: "daws86s.fun"
+    domain_name: "anilkathoju.space"
     # we can pass instances through command line using -e
     # instances: 
     # - mongodb
@@ -42,7 +42,7 @@
     amazon.aws.route53:
       state: present
       zone: "{{ domain_name }}"
-      record: "{{ item.item }}.{{ domain_name }}" # mongodb.daws86s.fun
+      record: "{{ item.item }}.{{ domain_name }}" # mongodb.anilkathoju.space
       type: A
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
@@ -54,7 +54,7 @@
     amazon.aws.route53:
       state: present
       zone: "{{ domain_name }}"
-      record: "{{ domain_name }}" # daws86s.fun
+      record: "{{ domain_name }}" # anilkathoju.space
       type: A
       ttl: 1
       value: "{{ item.instances[0].public_ip_address }}"
