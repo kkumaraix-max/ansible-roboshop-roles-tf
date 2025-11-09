@@ -1,1 +1,1 @@
-MONGODB_HOST: mongodb-{{ env }}.daws86s.fun
+MONGODB_HOST: mongodb-{{ env }}.anilkathoju.space

@@ -4,7 +4,7 @@
   vars:
     ami_id: ami-09c813fb71547fc4f
     sg_id: sg-07c8acf3fa6b923fa # replace with your SG ID
-    zone_id: "Z0948150OFPSYTNVYZOY" # replace with your ID
+    zone_id: "Z096778411CYC46C0VA5Q" # replace with your ID
     domain_name: "anilkathoju.space"
     # we can pass instances through command line using -e
     # instances: 
