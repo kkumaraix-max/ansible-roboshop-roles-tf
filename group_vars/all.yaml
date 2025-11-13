@@ -1,9 +1,12 @@
 MONGODB_HOST: mongodb-{{ env }}.anilkathoju.space # mongodb-dev.anilkathoju.space
 REDIS_HOST: redis-{{ env }}.anilkathoju.space
-CATALOGUE_HOST: catalogue-{{ env }}.anilkathoju.space
-CART_HOST: cart-{{ env }}.anilkathoju.space
-USER_HOST: user-{{ env }}.anilkathoju.space
+CATALOGUE_HOST: catalogue.backend-alb-{{ env }}.anilkathoju.space
+CART_HOST: cart.backend-alb-{{ env }}.anilkathoju.space
+USER_HOST: user.backend-alb-{{ env }}.anilkathoju.space
 RABBITMQ_HOST: rabbitmq-{{ env }}.anilkathoju.space
 MYSQL_HOST: mysql-{{ env }}.anilkathoju.space
-SHIPPING_HOST: shipping-{{ env }}.anilkathoju.space
-PAYMENT_HOST: payment-{{ env }}.anilkathoju.space
+SHIPPING_HOST: shipping.backend-alb-{{ env }}.anilkathoju.space
+PAYMENT_HOST: payment.backend-alb-{{ env }}.anilkathoju.space
+
+
+
